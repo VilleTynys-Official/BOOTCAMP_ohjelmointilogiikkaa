@@ -10,7 +10,21 @@ namespace Ohjelmointilogiikkaa
             int j = 200;
             string s = "ABC";
 
-            Console.WriteLine("Hello World!");
+            if (i > 100)                //perus if
+            {
+                Console.WriteLine("i:n arvo on isompi kuin sata!");
+            }
+            else
+            {
+                Console.WriteLine("i:n arvo on pienempi kuin sata!");
+            }
+
+            for (int laskuri = 0; laskuri < 10; laskuri++)
+            {
+                Console.WriteLine("moikka");
+            }
+
+         
         }
     }
 }
