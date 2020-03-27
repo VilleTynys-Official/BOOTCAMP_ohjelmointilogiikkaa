@@ -15,12 +15,26 @@ namespace Ohjelmointilogiikkaa
 
             //import random
             var rand = new Random();
-            int rand_num = rand.Next(1,20);
-            Console.WriteLine(rand_num);
+            int rand_num = rand.Next(1,20);             //arvotaan luku
 
 
 
+            //kysytään luku ja testataan ovatko samat
+            Console.WriteLine("Anna joku kokonaisluku välillä 1-20:");
+            int arvaus = int.Parse(Console.ReadLine());
+            Console.WriteLine("Arvasit: " + arvaus+
+                "\nKoneen arpoma numero oli: "+ rand_num);
+            if (arvaus==rand_num)
+            {
+                Console.WriteLine("Arvasit siis oikein!");
+            }
 
+            else
+            {
+                Console.WriteLine("Kokeileppa uudestaan..");
+            }
+
+          
 
 
 
